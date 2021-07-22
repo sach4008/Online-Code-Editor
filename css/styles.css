@@ -1,4 +1,49 @@
 body {
-    font-family: Verdana;
-    background-color: lightgrey;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: system, "Helvetica Neue", Helvetica, Arial;
+  font-size: 13px;
+  min-width: 976px;
+  overflow: hidden;
+  height: 100%;
+}
+
+div {
+  display: block;
+}
+
+.navbar {
+  position: absolute;
+  background-color: #F2F1E7;
+}
+
+.codebutton {
+  display: inline-block;
+  position: relative;
+  background-color: #B38240;
+}
+#run {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+
+#panel {
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  z-index: 0; 
+}
+
+#logo {
+  position: relative;
+}
+
+.codecontainer {
+  position: relative;
+  display: inline-block;
+}
