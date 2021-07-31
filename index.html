@@ -8,38 +8,19 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>Document</title>
 </head>
-<body>
 
-    <div class="navbar" id="panel">
-        <h1 id="logo">Online Code Editor</h1>
-        <button class="button" id="run">Run</button>
-        <div class="codebutton">
-            <a role="button" class="button group" href="?html" aria-label="HTML Panel: Active">HTML</a>
-            <a role="button" class="button group" href="?css" aria-label="CSS Panel: Inactive">CSS</a>
-            <a role="button" class="button group" href="?css" aria-label="JS Panel: Inactive">JavaScript</a>
-            <a role="button" class="button group" href="?css" aria-label="Results Panel: Inactive">Result</a>
-        </div>
+
+<body>
+    <div id="myself">Sachchidanand's Code Editor</div>
+    <div class="codecontainer">
+        <textarea id="htmlCode" oninput="showPreview()" placeholder="Write your HTML here"></textarea>
+        <textarea id="cssCode" oninput="showPreview()" placeholder="Write your CSS here"></textarea>
+        <textarea id="jsCode" oninput="showPreview()" placeholder="Write your JavaScript here"></textarea>
     </div>
-    
-    <div class="codecontainer" id="htmlcode">
-        <h2>HTML</h2>
-        <textarea name="html" cols="30" rows="5" placeholder="Write your HTML here"></textarea>
+    <h5>Output</h5>
+    <div id="output">
+        <iframe id="Result"></iframe>
     </div>
-    
-    <div class="codecontainer" id="csscode">
-        <h2>CSS</h2>
-        <textarea name="css" cols="30" rows="5" placeholder="Write your CSS here"></textarea>
-    </div>
-    
-    <div class="codecontainer" id="jscode">
-        <h2>JS</h2>
-        <textarea name="html" cols="30" rows="5" placeholder="Write your JavaScript here"></textarea>
-    </div>
-    
-    <div>
-        <h2>Results</h2>
-        <iframe src="" sandbox ></iframe>
-    </div>
-    
+    <script src="/js/script.js"></script>
 </body>
 </html>
